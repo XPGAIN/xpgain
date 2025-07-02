@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .games-section { max-width: 1200px; margin: 40px auto; }
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; margin-bottom: 40px; }
+    .game-thumb-link { display: block; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #0002; transition: transform 0.2s, box-shadow 0.2s; }
+    .game-thumb-link:hover { transform: scale(1.03); box-shadow: 0 8px 32px #0003; }
+    .game-thumb-img { width: 100%; aspect-ratio: 16/9; object-fit: contain; display: block; background: #eee; }
+    .game-title-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; font-size: 1.3em; font-weight: bold; padding: 16px 0; text-align: center; letter-spacing: 1px; }
+    @media (max-width: 600px) {
+      .games-grid { grid-template-columns: 1fr; }
+      .game-title-overlay { font-size: 1em; padding: 10px 0; }
+    }
+    .game-ref-img {
+      background: none !important;
+      background-color: transparent !important;
+      pointer-events: none;
+      user-select: none;
+    }
+        .back-btn {
+      position: absolute;
+      top: 13px;
+      left: 32px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.1em;
+      padding: 0.4em 1.5em;
+      border: 4px solid #00ffea;
+      border-radius: 16px;
+      background: #222;
+      color: #00ffea;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s, color 0.2s, border-color 0.2s;
+      box-shadow: 0 4px 16px #000a, 0 0 0 2px #00ffea;
+      outline: none;
+      text-shadow: 0 2px 8px #000a;
+      display: inline-block;
+      z-index: 10;
+    }
+    .back-btn:hover {
+      background: #00ffea;
+      color: #222;
+      border-color: #fff;
+      box-shadow: 0 8px 32px #00ffea, 0 0 0 4px #fff;
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn">&larr; Back to Home</a>
+  <header>
+    <h1>Games</h1>
+  </header>
+  <main class="games-section">
+    <div class="games-grid">
+      <a href="games/tetris-newest-OS.html" class="game-thumb-link">
+        <img src="img/tetris-newest-OS.png" alt="Tetris" class="game-thumb-img">
+        <span class="game-title-overlay">Tetris</span>
+      </a>
+      <a href="games/Last Chess Standing v101/index.html" class="game-thumb-link">
+        <img src="img/last-chess-standing.png" alt="Last Chess Standing" class="game-thumb-img">
+        <span class="game-title-overlay">Last Chess Standing</span>
+      </a>
+      <a href="games/hex-game-main/index.html" class="game-thumb-link">
+        <img src="img/hex-game-main.png" alt="Hex Game" class="game-thumb-img">
+        <span class="game-title-overlay">Hex Game</span>
+      </a>
+      <a href="games/dragonsweeper1.0.0/index.html" class="game-thumb-link">
+        <img src="img/dragonsweeper.png" alt="Dragonsweeper" class="game-thumb-img">
+        <span class="game-title-overlay">Dragonsweeper</span>
+      </a>
+      <a href="games/ssspicy-v1.1.2/index.html" class="game-thumb-link">
+        <img src="img/ssspicy.png" alt="SSSPICY!" class="game-thumb-img">
+        <span class="game-title-overlay">SSSPICY!</span>
+      </a>
+      <a href="games/packabunchas-main/index.html" class="game-thumb-link">
+        <img src="img/packabunchas.png" alt="PACKABUNCHAS" class="game-thumb-img">
+        <span class="game-title-overlay">PACKABUNCHAS</span>
+      </a>
+      <a href="games/edge-not-found/index.html" class="game-thumb-link">
+        <img src="img/edge-not-found.png" alt="Edge Not Found" class="game-thumb-img">
+        <span class="game-title-overlay">Edge Not Found</span>
+      </a>
+      <a href="games/envisionator/index.html" class="game-thumb-link">
+        <img src="img/envisionator.png" alt="Envisionator" class="game-thumb-img">
+        <span class="game-title-overlay">Envisionator</span>
+      </a>
+      <a href="games/q1k3/index.html" class="game-thumb-link">
+        <img src="img/q1k3.png" alt="Q1K3" class="game-thumb-img">
+        <span class="game-title-overlay">Q1K3</span>
+      </a>
+      <a href="games/offline-paradise/index.html" class="game-thumb-link">
+        <img src="img/offline-paradise.png" alt="Offline Paradise" class="game-thumb-img">
+        <span class="game-title-overlay">Offline Paradise</span>
+      </a>
+      <a href="games/off-the-line/index.html" class="game-thumb-link">
+        <img src="img/off-the-line.png" alt="Off The Line" class="game-thumb-img">
+        <span class="game-title-overlay">Off The Line</span>
+      </a>
+      <a href="games/evil-glitch/index.html" class="game-thumb-link">
+        <img src="img/evil-glitch.png" alt="Evil Glitch" class="game-thumb-img">
+        <span class="game-title-overlay">Evil Glitch</span>
+      </a>
+      <a href="games/planet-figadore/index.html" class="game-thumb-link">
+        <img src="img/planet-figadore.png" alt="Planet Figadore Has Gone OFFLINE" class="game-thumb-img">
+        <span class="game-title-overlay">Planet Figadore Has Gone OFFLINE</span>
+      </a>
+      <a href="games/elematter/index.html" class="game-thumb-link">
+        <img src="img/elematter.png" alt="Elematter" class="game-thumb-img">
+        <span class="game-title-overlay">Elematter</span>
+      </a>
+      <a href="games/oh-flip/index.html" class="game-thumb-link">
+        <img src="img/oh-flip.png" alt="Oh, Flip!" class="game-thumb-img">
+        <span class="game-title-overlay">Oh, Flip!</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html> 
